@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #FFF; }
+
+#header.active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+
 .form-control {
   border: 0 !important; }
 
@@ -11364,7 +11374,7 @@ footer .nano-expansion-toggle:before {
   transform: translateY(-105%); }
 
 .show-searchbar {
-  box-shadow: 5px 5px 10px #d0d0d0, -5px -5px 10px #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   transform: translate(0); }
 
 .searchbar .input-group button {

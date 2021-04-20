@@ -9,7 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="images/brand.svg">
 
-    <title>BANCO PAN - Fale com RI</title>
+    <title>BANCO PAN - Registre-se / Mailing</title>
     
   </head>
   
@@ -378,13 +378,13 @@
           <div class="container">
             <div class="content ps-0 ps-lg-6">
                 <small class="text-primary">Fale com RI</small>
-                <h1>Fale com RI</h1>
+                <h1>Registre-se / Mailing</h1>
 
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                     <li class="breadcrumb-item"><a href="index.html">Fale com RI</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Fale com RI</li>
+                    <li class="breadcrumb-item active" aria-current="page">Registre-se / Mailing</li>
                   </ol>
                 </nav>
 
@@ -396,60 +396,44 @@
       <!-- breadcrumbs -->
 
       <div class="container py-8">
-          <h1 class="text-primary fw-bolder">Utilize o formulário abaixo para mensagens</h1>
+          <h4 class="text-primary fw-bolder">Cadastrar mailing</h4>
           <br><br>
         <form action="">
-            <div class="row row-cols-1 row-cols-lg-2 align-items-center gy-4">
+            <div class="col-12 border border-2 col-lg-6 p-5 p-lg-7">
+                <label for="#name">Nome Completo</label>
+                <input required type="text" id="name" placeholder="Ex: Amanda Santos" name="name" class="form-control mb-4">
+                <label for="#email">E-mail*</label>
+                <input required type="text" id="email" placeholder="Ex: amandasantos@gmail.com" name="email" class="form-control mb-4">
+                <label for="#phone">Telephone*</label>
+                <input required type="text" id="phone" placeholder="Ex: (11) 1234-5678" name="phone" class="form-control mb-4">
+                <h6 class="mb-0">Prefil</h6>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Selecionar</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <h6 class="fw-bold my-4">Idioma</h6>
+                <h6 class="mb-0">Qual o idioma de sua preferência?</h6>
+                <div class="form-check d-inline-block my-4 me-4">
+                  <input class="form-check-input" name="lang" type="checkbox" value="pt" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">PT
+                  </label>
+                </div>
+                <div class="form-check d-inline-block my-4">
+                  <input class="form-check-input" name="lang" type="checkbox" value="en" id="flexCheckDefault2">
+                  <label class="form-check-label" for="flexCheckDefault2">EN
+                  </label>
+                </div>
 
-                <div class="col">
-                    <label for="#name">Nome*</label>
-                    <input required type="text" id="name" placeholder="Ex: Amanda Santos" name="name" class="form-control">
+                <div class="d-grid d-md-block gap-2">
+                    <input type="submit" value="Cadastrar" class="btn btn-primary btn-lg text-white">
+                    <button class="btn border border-1 border-primary btn-lg">Limpar</button>
                 </div>
-                <div class="col">
-                    <label for="#email">E-mail*</label>
-                    <input required type="text" id="email" placeholder="Ex: amandasantos@gmail.com" name="email" class="form-control">
-                </div>
-                <div class="col">
-                    <label for="#phone">Telephone*</label>
-                    <input required type="text" id="phone" placeholder="Ex: (11) 1234-5678" name="phone" class="form-control">
-                </div>
-                <div class="col">
-                    <label for="#empresa">Empresa*</label>
-                    <input required type="text" id="empresa" placeholder="Digite aqui" name="empresa" class="form-control">
-                </div>
-
-                <div class="col-12 col-lg-6 mb-4">
-                    <h6 class="mb-0">Mensagem</h6>
-                    <textarea name="message" id="message" name="message" cols="30" rows="5" class="form-control"></textarea>
-                </div>
-            </div>
-            
-            <h6 class="mb-0">Em qual idioma deseja receber?</h6>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="lang" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Português
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="lang" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-                Inglês
-              </label>
-            </div>
-            <div class="form-check my-4">
-              <input class="form-check-input" name="terms" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Você aceita nossos termos e poderá ler nossa <a class="text-primary" href="#">Política de Privacidade</a> quando desejar
-              </label>
-            </div>
-
-            <div  class="d-grid d-md-block gap-2">
-                <input type="submit" value="Enviar formulário" class="btn btn-primary btn-lg text-white">
-                <button class="btn border border-1 border-primary btn-lg">Limpar</button>
+                
+                <p class="mt-5">Este portal utiliza cookies (incluindo cookies dos nossos parceiros) para fornecer a melhor experiência possível para você, além de monitorar e analisar o tráfego no nosso website. Suas preferências podem ser alteradas a qualquer momento nas definições de cookies de seu navegador. Saiba mais sobre a forma como usamos os seus dados visitando a nossa Política de Privacidade.</p>
             </div>
         </form>
-        <p class="col-12 col-lg-8 mt-5">Os dados cadastrados nesse site serão utilizados para lhe enviar comunicados da área de Relações com Investidores e atender às suas solicitações. Para mais informações sobre o uso de dados, por favor consulte os Termos de Uso e a Política de Privacidade. Ao continuar navegando nesse site, você declara estar ciente da nossa Política de Privacidade. Para consultar, alterar ou remover seus dados deste cadastro, contate-nos através do e-mail relacoes.investidores@bancopan.com.br.</p>
       </div>
       
 

@@ -2,6 +2,12 @@
 img {
   max-width: 100%; }
 
+table img {
+  height: 30px; }
+
+table img.disabled {
+  opacity: 0.5; }
+
 .accordion-button {
   font-weight: 700 !important; }
 
@@ -15,10 +21,10 @@ img {
 #header.active {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
 
-.form-control {
+.searchbar .form-control, aside .form-control {
   border: 0 !important; }
 
-.form-control:focus {
+.searchbar .form-control:focus, aside .form-control:focus {
   box-shadow: none !important; }
 
 /*!

@@ -9874,7 +9874,6 @@ aside * input {
   width: 100%;
   max-height: auto;
   background-color: #fff;
-  box-shadow: 0 2px 5px rgba(55, 84, 170, 0.2);
   border-radius: 5px;
   overflow: hidden;
   will-change: max-height;
@@ -9931,7 +9930,6 @@ footer .nano-expansion {
   width: auto;
   background: transparent;
   color: #fff !important;
-  box-shadow: none;
   border-radius: 0; }
   footer .nano-expansion::after {
     content: ""; }
@@ -9950,7 +9948,6 @@ footer .nano-expansion-toggle:before {
   height: 100%;
   border-radius: 0px;
   background: #FFF;
-  box-shadow: 5px 5px 10px #d0d0d0, -5px -5px 10px #f0f0f0;
   transition: all 0.3s linear;
   transform: translate(-105%);
   z-index: 99; }

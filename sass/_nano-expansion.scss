@@ -66,6 +66,7 @@
 //nano expansion
 .nano-expansion a{
   font-weight: 500 !important;
+  color: inherit !important;
 } 
 .nano-expansion-toggle{
   cursor: pointer;
@@ -75,7 +76,7 @@
   font-weight: bolder;
   margin-bottom: 5px;
 }
-.nano-expansion-toggle:before{
+aside .nano-expansion-toggle:before{
   content: url(../images/down.svg);
   padding-right: 15px;
 }

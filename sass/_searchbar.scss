@@ -1,0 +1,29 @@
+//searchbar
+.searchbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    border-radius: 0px;
+    background: #FFF;
+    z-index: 50;
+    
+    transition: all 0.3s linear;
+    transform: translateY(-105%);
+  }
+  
+  .show-searchbar {
+      box-shadow:  5px 5px 10px #d0d0d0,
+                 -5px -5px 10px #f0f0f0;
+    transform: translate(0);
+  }
+  // @media screen and (min-width: 676px) {
+  //   .sidebar {
+  //     width: 400px;
+  //   }
+  // }
+  .searchbar .input-group button{
+      padding: 0 !important;
+      width: 30px !important;
+  }

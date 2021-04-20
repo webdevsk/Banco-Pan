@@ -10,7 +10,7 @@ $theme-colors: (
 );
 $body-color:  #414141;
 
-//spacing
+//variables
 $spacer: 1rem;
 $spacers: (
   0: 0,
@@ -35,37 +35,13 @@ $accordion-button-active-color: none;
 $accordion-button-focus-border-color: none;
 $accordion-button-focus-box-shadow: none;
 
-
-@import "../bootstrap/scss/bootstrap";
-
-
-//nano expansion
-.nano-expansion a{
-    font-weight: 500 !important;
-}
-.nano-expansion-wrapper > .nano-expansion {
-    margin-bottom: 15px !important;
-}   
-.nano-expansion-toggle{
-    cursor: pointer;
-    -webkit-user-select: none !important;
-    -moz-user-select: none !important;
-    user-select: none !important;
-    font-weight: bolder;
-    margin-bottom: 5px;
-}
-.nano-expansion-toggle:before{
-    content: url(../images/down.svg);
-    padding-right: 15px;
-}
-@import "nano-expansion.scss";
 .form-control{
-    border: 0;;
+    border: 0 !important;
 }
 .form-control:focus{
     box-shadow: none !important;
 }
-
+@import "../bootstrap/scss/bootstrap";
   /* Sidebar Nav */
   aside{
       overflow-x: hidden;
@@ -73,91 +49,22 @@ $accordion-button-focus-box-shadow: none;
   aside * input{
       background-color: transparent !important;
   }
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
+.carousel-body{
+    position: absolute;
+    top: 0%;
+    left: 0%;
     width: 100%;
     height: 100%;
-    border-radius: 0px;
-    background: #FFF;
-    box-shadow:  5px 5px 10px #d0d0d0,
-                 -5px -5px 10px #f0f0f0;
-    transition: all 0.3s linear;
-    transform: translate(-100%);
-  }
-  
-  .show-sidebar {
-    transform: translate(0);
-  }
-  .dropdown-toggle::after {
-      display: none !important;
-  }
-  
-  @media screen and (min-width: 676px) {
-    .sidebar {
-      width: 505px;
-    }
-  }
-.top-header *{
-    font-size: 14px !important;
+    color: #FFF;
 }
-
-//searchbar
-.searchbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  border-radius: 0px;
-  background: #FFF;
-  
-  transition: all 0.3s linear;
-  transform: translateY(-105%);
-}
-
-.show-searchbar {
-    box-shadow:  5px 5px 10px #d0d0d0,
-               -5px -5px 10px #f0f0f0;
-  transform: translate(0);
-}
-// @media screen and (min-width: 676px) {
-//   .sidebar {
-//     width: 400px;
-//   }
-// }
-.searchbar .input-group button{
-    padding: 0 !important;
-    width: 30px !important;
-}
-
-//custom scrollbar
-.scroll {
-  max-height: 400px;
-  overflow: hidden;
-}
-
-//carousel body
-// .carousel-body{
-//     position: absolute;
-//     top: 0%;
-//     left: 0%;
-//     width: 100%;
-//     height: 100%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: start;
-//     color: #FFF;
-// }
 .carousel-item{
+    min-height: 450px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.banner1{
-    background-image: url(../images/banner.png);
-}
-.banner2{
-    background-image: url(../images/banner-2.png);
-}
+
+@import "nano-expansion";
+@import "sidebar";
+@import "searchbar";
+@import "scrollbar";

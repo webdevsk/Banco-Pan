@@ -1,0 +1,30 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background: #FFF;
+    box-shadow:  5px 5px 10px #d0d0d0,
+                 -5px -5px 10px #f0f0f0;
+    transition: all 0.3s linear;
+    transform: translate(-105%);
+    z-index: 99;
+  }
+  
+  .show-sidebar {
+    transform: translate(0);
+  }
+  .dropdown-toggle::after {
+      display: none !important;
+  }
+  
+  @media screen and (min-width: 676px) {
+    .sidebar {
+      width: 505px;
+    }
+  }
+.top-header *{
+    font-size: 14px !important;
+}

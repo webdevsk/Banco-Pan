@@ -54,7 +54,12 @@ $link-hover-decoration: none;
 //   }
 // }
 
-
+img{
+  max-width: 100%;
+}
+.accordion-button{
+  font-weight: 700 !important;
+}
 #header{
   position: sticky;
   top: 0;
@@ -94,7 +99,7 @@ $link-hover-decoration: none;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+@import "breadcrumb";
 @import "nano-expansion";
 @import "sidebar";
 @import "searchbar";

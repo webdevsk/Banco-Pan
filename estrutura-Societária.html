@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@lugindev/truescrollbar/src/TrueScrollBar.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="images/brand.svg">
+
+    <title>BANCO PAN - Estrutura Societária</title>
+    
+  </head>
+  
+  <body>
+    <header id="header">
+        <!-- top header -->
+      <div class="top-header d-none d-lg-block container">
+          <div class="row gx-0 align-items-center">
+
+              <div class="col-1">
+                  <a href="#" class="fw-bold text-dark text-decoration-underline" >Institucional</a>
+              </div>
+
+              <div class="offset-3 col-3">
+                  <div class="content text-center">
+                      <img class="d-inline px-2" src="images/stock.svg" alt="stock">
+                      <div class="d-inline fw-bold text-primary px-1">BPAN4:</div>
+                      <div class="d-inline fw-bolder">R$ 21,40</div>
+                      <span class="d-inline px-1">1,8%</span>
+                      <span class="d-inline text-feedback px-1">+1,20</span>
+                      <img class="d-inline pb-1" src="images/vector2.svg" alt="stock">
+                  </div>
+              </div>
+
+              <div class="col-3 border-dark border-start border-end border-1">
+                  <div class="content text-center">
+                      <p class="d-inline">Acessibilidade</p>
+                      <button class="btn btn-sm px-1 ">A-</button>
+                      <button class="btn btn-sm px-1 ">A+</button>
+                      <button class="btn btn-sm px-1 pt-1"><img class="" src="images/darkmode.svg" alt="darkmode"></button>
+                  </div>
+              </div>
+
+              <div class="col-2">
+                  <div class="content">
+                      <button active class="btn btn-sm text-primary">PT</button>
+                      <span class=" border-start border-1 pb-1 border-dark"></span>
+                      <button class="btn btn-sm">EN</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- top header -->
+      <!-- navbar -->
+      <div class="container">
+          <div class="row py-4 py-lg-3 pb-lg-4 gx-0 justify-content-between justify-content-lg-start align-items-end">
+
+            <div class="col-3 col-lg-1">
+                <button class="btn sidebar-toggle p-0">
+                    <img class="mw-100" src="images/nav.svg" alt="nav">
+                </button>
+            </div>
+
+            <div class="col-4 col-lg-2">
+                <a href="index.html">
+                    <img class="mw-100" src="images/brand-content.svg" alt="brand-content">
+                </a>
+            </div>
+
+            <div class="d-none d-lg-block offset-lg-3 col-lg-2">
+                <button class="btn searchbar-toggle">
+                    Buscar 
+                    <img class="mw-100 px-1 pb-1" src="images/search.svg" alt="search">
+                </button>
+            </div>
+
+            <div class="d-none d-lg-block col-lg-2">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Alertas  
+                    <img class="mw-100 px-1 pb-1" src="images/alerted.svg" alt="alert">
+                  </button>
+                  <ul style="height: 400px;" class="scroll dropdown-menu dropdown-menu-end navbar-nav-scroll shadow py-4" aria-labelledby="dropdownMenuButton1">
+                    <li class="user-select-none text-gray px-5">Últimas Atualizações</li>
+                    <li class="py-4">
+                        
+                        <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                    </li>
+                    <li class="py-4">
+                        
+                        <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                    </li>
+                    <li class="py-4">
+                        
+                        <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                    </li>
+                    <li class="py-4">
+                        
+                        <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                    </li>
+                    <li><a class="nav-link text-nowrap px-5" href="#">Ver mais atualizações</a></li>
+                  </ul>
+                </div>
+            </div>
+
+            <div class="d-none d-lg-block col-lg-2">
+                <button class="btn">
+                    CVM  
+                    <img class="mw-100 px-1 pb-1" src="images/pdf 1.svg" alt="pdf 1">
+                </button>
+            </div>
+
+          </div>
+
+      </div>
+      <!-- navbar -->
+      <!-- navbar-aside -->
+      <aside class="sidebar">
+        <div class="sidebar-header d-flex align-items-center justify-content-start justify-content-lg-evenly pt-6 pb-3 bg-dark">
+        <button class="close-btn btn">
+          <img class="mw-100" src="images/close.svg" alt="close">
+        </button>
+        <img class="mw-100" src="images/brand-white.svg" alt="brand">
+        </div>
+        <!-- search -->
+        <div class="container">
+            <div class="row d-flex d-lg-none gx-3 justify-content-between align-items-center border-bottom border-1 border-gray ">
+              <div class="col-12 text-center">
+                  <a href="#" class="nav-link text-dark" >Institucional</a>
+              </div>
+              <div class="col-8">
+                  <form action="" method="GET">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="" aria-label="Search Button" aria-describedby="search-btn2">
+                        <button type="submit" class="btn" id="search-btn2">
+                            <img class="mw-100 px-1 pb-1" src="images/search.svg" alt="search">
+                        </button>
+                      </div>
+                  </form>
+              </div>
+
+              <div class="col-2">
+                  <!-- <button class="btn">
+                      <img class="mw-100 px-1 pb-1" src="images/alerted.svg" alt="alert">
+                  </button> -->
+                  <div class="dropdown text-center">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img class="mw-100 px-1 pb-1" src="images/alerted.svg" alt="alert">
+                    </button>
+                    <ul class="dropdown-menu navbar-nav-scroll dropdown-menu-end shadow py-4" aria-labelledby="dropdownMenuButton1">
+                      <li class="user-select-none text-gray px-5">Últimas Atualizações</li>
+                      <li class="py-4">
+
+                          <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                      </li>
+                      <li class="py-4">
+
+                          <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                      </li>
+                      <li class="py-4">
+
+                          <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                      </li>
+                      <li class="py-4">
+
+                          <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                      </li>
+                      <li><a class="nav-link text-nowrap px-5" href="#">Ver mais atualizações</a></li>
+                    </ul>
+                  </div>
+              </div>
+
+              <div class="col-2">
+                  <button class="btn">
+                      <img class="mw-100 px-1 pb-1" src="images/pdf 1.svg" alt="pdf 1">
+                  </button>
+              </div>
+
+            </div>
+        </div>
+        <!--nav menu -->
+
+        <!-- expansion wrapper -->
+        <div class="container ps-3 ps-lg-10 mt-5 mb-4 nano-expansion-wrapper" id="myexpansion">
+          <!-- expansion 1 -->
+          <div class="nano-expansion">
+            <div class="nano-expansion-toggle">O Banco</div>
+            <div class="nano-expansion-content navbar-light">
+              <ul class="ps-6 navbar-nav">
+                  <li class="nav-item">
+                      <a href="quem-somos.html" class="nav-link">Quem somos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="nossa-história.html" class="nav-link">Nossa história</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="estrutura-Societária.html" class="nav-link">Estrutura Societária</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <!-- expansion 2 -->
+          <div class="nano-expansion">
+            <div class="nano-expansion-toggle">Governança Corporativa</div>
+            <div class="nano-expansion-content navbar-light">
+              <ul class="ps-6 navbar-nav">
+                  <li class="nav-item">
+                      <a href="conselho-e-diretoria.html" class="nav-link">Conselho e Diretoria</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="assembleia-e-reuniões.html" class="nav-link">Assembleia e Reuniões</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Estatuto, Códigos e Políticas</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Gestão de Riscos</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                      <a href="comites.html" class="nav-link">Comitês</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <!-- normal link -->
+          <a class="nav-link text-dark ps-4 ms-1 py-0 mb-3 fw-bolder" href="#">Sustentabilidade</a>
+          <!-- expansion 3 -->
+          <div class="nano-expansion">
+            <div class="nano-expansion-toggle">Informações aos Investidores</div>
+            <div class="nano-expansion-content navbar-light">
+              <ul class="ps-6 navbar-nav">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Apresentação Institucional</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="central-de-resultados.html" class="nav-link">Central de Resultados</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Cobertura de Analistas</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                      <a href="calendário-de-eventos.html" class="nav-link">Calendário de Eventos</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Dividendos / JCP</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Ratings</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <!-- expansion 4 -->
+          <div class="nano-expansion">
+            <div class="nano-expansion-toggle">Formulário de Referência</div>
+            <div class="nano-expansion-content navbar-light">
+              <ul class="ps-6 navbar-nav">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Comunicados e Fatos Relevantes</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Formulário de Referência</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <!-- expansion 5 -->
+          <div class="nano-expansion">
+            <div class="nano-expansion-toggle">Pan Consórcio</div>
+            <div class="nano-expansion-content navbar-light">
+              <ul class="ps-6 navbar-nav">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">BFRE</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Brazilian Securitiesa</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Pan Consórcio</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <!-- expansion 6 -->
+          <div class="nano-expansion">
+            <div class="nano-expansion-toggle">Fale com RI</div>
+            <div class="nano-expansion-content navbar-light">
+              <ul class="ps-6 navbar-nav">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Perguntas Frequentes</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                      <a href="resultados-da-busca.html" class="nav-link">Registre-se / Mailing</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                      <a href="fale-com-rI.html" class="nav-link">Fale com RI</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stock -->
+        <div class="d-block d-lg-none mb-4 ps-3">
+            <div class="content text-start">
+                <img class="d-inline px-2" src="images/stock.svg" alt="stock">
+                <div class="d-inline fw-bold text-primary px-1">BPAN4:</div>
+                <div class="d-inline fw-bolder">R$ 21,40</div>
+                <span class="d-inline px-1">1,8%</span>
+                <span class="d-inline text-feedback px-1">+1,20</span>
+                <img class="d-inline pb-1" src="images/vector2.svg" alt="stock">
+            </div>
+        </div>
+
+        <!-- accessiblity -->
+        <div class="border-dark ps-4 mb-3 d-block d-lg-none">
+            <div class="content">
+                <p class="d-inline">Acessibilidade</p>
+                <button class="btn btn-sm px-1 ">A-</button>
+                <button class="btn btn-sm px-1 ">A+</button>
+                <button class="btn btn-sm px-1 pt-1"><img class="" src="images/darkmode.svg" alt="darkmode"></button>
+            </div>
+        </div>
+
+        <!-- language -->
+        <div class="d-block ps-4 d-lg-none">
+            <div class="content">
+                <button active class="btn btn-sm text-primary">PT</button>
+                <span class=" border-start border-1 pb-1 border-dark"></span>
+                <button class="btn btn-sm">EN</button>
+            </div>
+        </div>
+
+        
+
+
+      </aside>
+      <!-- navbar-aside -->
+      <!-- searchbar toggle -->
+      <div class="searchbar">
+          <div class="container text-center py-5">
+            <form action="" method="GET" class="col-10 mx-auto">
+              <div class="input-group">
+                  <button type="submit" class="btn" id="search-btn2">
+                      <img class="mw-100 px-1 pb-1" src="images/searchblue.svg" alt="searchblue">
+                  </button>
+                  <input type="text" class="form-control border-bottom border-1 border-gray" placeholder="Ex. CVM" aria-label="Search Button" aria-describedby="search-btn2">
+                  <button class="btn close-search" id="search-close">
+                      <img class="mw-100 px-1 pb-1" src="images/closedark.svg" alt="searchblue">
+                  </button>
+                </div>
+            </form>
+          </div>
+      </div>
+      <!-- searchbar toggle -->
+    </header>
+    
+      
+
+      <!-- header ends here -->
+      <!-- header ends here -->
+      <!-- header ends here -->
+
+      <!-- breadcrumbs -->
+      <!-- breadcrumbs -->
+      <!-- breadcrumbs -->
+      <section class="bg-dark py-4 text-white">
+          <div class="container">
+            <div class="content ps-0 ps-lg-6">
+                <small class="text-primary">O Banco</small>
+                <h1>Nossa História</h1>
+
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">O Banco</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Estrutura Societária</li>
+                  </ol>
+                </nav>
+
+            </div>
+          </div>
+      </section>
+      <!-- breadcrumbs -->
+      <!-- breadcrumbs -->
+      <!-- breadcrumbs -->
+
+      <div class="container">
+          <p>Somos uma companhia aberta, listada no Nível 1 de governança corporativa da B3 S.A. – Brasil, Bolsa, Balcão (“B3”), controlada conjuntamente desde 2011 pelo BTG Pactual e pela CAIXAPAR, subsidiária integral da Caixa Econômica Federal. Contamos com uma sólida estrutura de capital inteiramente composta por 15,9% de Capital Principal.</p>
+          <br>
+          <p>Segue abaixo quadro com a atual composição acionária da Companhia:</p>
+          
+          <div data-aos="fade-in" data-aos-anchor-placement="top-center" class="imgbase text-center py-4">
+            <img src="images/$-organograma-composicao-acionaria.svg" alt="organograma-composicao-acionaria">
+          </div>
+
+          <!-- table section -->
+          <section class="py-4">
+              <div class="table-responsive">
+                <table class="table">
+                    <thead class="table-dark">
+                      <tr>
+                        <th class="text-center bg-dark text-white" colspan="7" scope="col">Composição Acionária (em milhares de ações)</th>
+                      </tr>
+                    </thead>
+                    <thead class="bg-gray text-white">
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">ON</th>
+                        <th scope="col">% ON</th>
+                        <th scope="col">PN</th>
+                        <th scope="col">% PN</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">%</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Banco BTG Pactual S.A.</td>
+                        <td>334.131</td>
+                        <td>50,8%</td>
+                        <td>206.371</td>
+                        <td>37,7%</td>
+                        <td>540.502</td>
+                        <td>44,9%</td>
+                      </tr>
+                      <tr>
+                        <td>Caixa Participações S.A.</td>
+                        <td>323.430</td>
+                        <td>49,2%</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>323.430</td>
+                        <td>26,8%</td>
+                      </tr>
+                      <tr>
+                        <td>Free Float</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>341.124</td>
+                        <td>62,3%</td>
+                        <td>341.124</td>
+                        <td>28,3%</td>
+                      </tr>
+                      <tr>
+                        <th>Total</td>
+                        <th>657.561</td>
+                        <th>100,0%</td>
+                        <th>547.495</td>
+                        <th>100,0%</td>
+                        <th>1.205.056</td>
+                        <th>100,0%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+          </section>
+
+          <p class="py-4">
+            A despeito da diferença no número de ações detidas pelos acionistas controladores, o Acordo de Acionistas não será alterado, de maneira que a CaixaPar e BTG Pactual permanecem como co-controladores da Companhia.
+          </p>
+
+          <a style="text-decoration: underline; color: blue;" href="#">Clique aqui para acessar o Acordo de Acionistas.</a>
+          <br>
+          <br>
+          <br>
+          <br>
+          
+      </div>
+
+
+
+
+
+
+
+
+
+
+      
+    <!-- footer -->
+    <footer class="bg-dark pt-5 text-white">
+        <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-12 col-lg-6">
+            <div class="row gx-4 gy-4 align-items-end justify-content-center text-center text-lg-start">
+                <img class="col-4 col-lg-5 col-xl-4 pe-4" src="images/brand-white.svg" alt="brand-white">
+                <small class="col-12 col-lg-6 text-white">© 2021 - Banco PAN - Todos os direitos reservados</small>
+            </div>
+            </div>
+
+            <div class="col-12 mt-4 offset-lg-3 col-lg-3 text-center text-lg-end ">
+            <small class="mb-4 text-white">Redes Sociais</small>
+            <ul class="ps-0 ps-lg-3 d-flex justify-content-center justify-content-lg-end align-items-center text-lg-end">
+                <li class="nav-link px-2"><a href="#"><img src="images/Vector(10).svg" alt="facebook"></a></li>
+                <li class="nav-link px-2"><a href="#"><img src="images/Vector(11).svg" alt="instagram"></a></li>
+                <li class="nav-link px-2"><a href="#"><img src="images/Vector(12).svg" alt="twitter"></a></li>
+                <li class="nav-link px-2"><a href="#"><img src="images/Vector(13).svg" alt="youtube"></a></li>
+                <li class="nav-link px-2 pe-0"><a href="#"><img src="images/Vector(14).svg" alt="linkedin"></a></li>
+            </ul>
+            </div>
+
+
+        </div>
+
+        <div class="row mt-4 row-cols-6 d-none d-xl-flex">
+            <div class="col">
+            <h6>O Banco</h6>
+            </div>
+            <div class="col">
+            <h6>Governança Corporativa</h6>
+            </div>
+            <div class="col">
+            <h6>Informações aos Investidores</h6>
+            </div>
+            <div class="col">
+            <h6>Documentos CVM</h6>
+            </div>
+            <div class="col">
+            <h6>Outras Empresas</h6>
+            </div>
+            <div class="col">
+            <h6>Fale com RI</h6>
+            </div>
+        </div>
+
+        <div class="row mt-5 text-center text-md-start mb-5 row-cols-1 gy-4 row-cols-md-2 row-cols-lg-3 row-cols-xl-6">
+            <div class="col navbar-dark">
+            <h6 class="mb-3 d-block d-xl-none">O Banco</h6>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="quem-somos.html" class="nav-link">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="nossa-história.html" class="nav-link">Nossa história</a>
+                </li>
+                <li class="nav-item">
+                    <a href="estrutura-Societária.html" class="nav-link">Estrutura Societária</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col navbar-dark">
+            <h6 class="mb-3 d-block d-xl-none">Governança Corporativa</h6>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="conselho-e-diretoria.html" class="nav-link">Conselho e Diretoria</a>
+                </li>
+                <li class="nav-item">
+                    <a href="assembleia-e-reuniões.html" class="nav-link">Assembleia e Reuniões</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Estatuto, Códigos e Políticas</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Gestão de Riscos</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="comites.html" class="nav-link">Comitês</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col navbar-dark">
+            <h6 class="mb-3 d-block d-xl-none">Informações aos Investidores</h6>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Apresentação Institucional</a>
+                </li>
+                <li class="nav-item">
+                    <a href="central-de-resultados.html" class="nav-link">Central de Resultados</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Cobertura de Analistas</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="calendário-de-eventos.html" class="nav-link">Calendário de Eventos</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Dividendos / JCP</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Ratings</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col navbar-dark">
+            <h6 class="mb-3 d-block d-xl-none">Documentos CVM</h6>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Comunicados e Fatos Relevantes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Formulário de Referência</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col navbar-dark">
+            <h6 class="mb-3 d-block d-xl-none">Outras Empresas</h6>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">BFRE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Brazilian Securities</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Pan Consórcio</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col navbar-dark">
+            <h6 class="mb-3 d-block d-xl-none">Fale com RI</h6>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Perguntas Frequentes</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="resultados-da-busca.html" class="nav-link">Registre-se / Mailing</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="fale-com-rI.html" class="nav-link">Fale com RI</a>
+                </li>
+            </ul>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="row pt-1 pb-2 align-items-center">
+            <div class="col-12 col-lg-6">
+            <ul class="nav justify-content-center justify-content-lg-start">
+                <li class="nav-item">
+                <a class="nav-link text-white" href="#">Termos de uso</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="#">Política de privacidade</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col-12 col-lg-6">
+            <ul class="nav justify-content-center justify-content-lg-end">
+                <li class="nav-item">
+                <a class="nav-link d-inline text-white" href="#">Desenvolvimento: <b>RIWeb</b></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/nano-expansion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@lugindev/truescrollbar/src/TrueScrollBar.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script>
+    $(window).scroll(function() {     
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+            $("#header").addClass("active");
+        }
+        else {
+            $("#header").removeClass("active");
+        }
+    });
+    </script>
+    <script>
+        const toggleBtn =document.querySelector('.sidebar-toggle');
+        const closeBtn =document.querySelector('.close-btn');
+        const sidebar =document.querySelector('.sidebar');
+        toggleBtn.addEventListener('click', function(){
+        sidebar.classList.toggle('show-sidebar');
+        });
+        closeBtn.addEventListener('click', function(){
+        sidebar.classList.remove('show-sidebar');
+        });
+    </script>
+    <script>
+        const toggleSrc =document.querySelector('.searchbar-toggle');
+        const closeSrc =document.querySelector('.close-search');
+        const searchbar =document.querySelector('.searchbar');
+        toggleSrc.addEventListener('click', function(){
+        searchbar.classList.toggle('show-searchbar');
+        });
+        closeSrc.addEventListener('click', function(){
+        searchbar.classList.remove('show-searchbar');
+        });
+    </script>
+
+    <script>
+        let el = document.querySelector('.scroll');
+        new TrueScrollBar(el);
+        // new TrueScrollBar(document.body, {
+        //     takeMarkup: true
+        // })
+    </script>
+    <script>
+        const nanoExpansion = new NanoExpansion({
+            duration: 0.5,
+            wrapper: "#myexpansion",
+        });
+    </script>
+
+</body>
+</html>

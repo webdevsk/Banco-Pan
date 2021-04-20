@@ -63,6 +63,7 @@
     }
   }
 }
+
 //nano expansion
 .nano-expansion a{
   font-weight: 500 !important;
@@ -78,4 +79,21 @@
 .nano-expansion-toggle:before{
   content: url(../images/down.svg);
   padding-right: 15px;
+}
+
+footer .nano-expansion{
+  width: auto;
+  background: transparent;
+  color: #fff !important;
+  box-shadow: none;
+  border-radius: 0;
+  &::after{
+    content:"";
+  }
+}
+footer .nano-expansion .nav-link{
+  color: #fff !important;
+}
+footer .nano-expansion-toggle:before{
+  content: "";
 }

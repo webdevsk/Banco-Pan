@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-img {
-  max-width: 100%; }
-
 table img {
   height: 30px; }
 
@@ -11546,10 +11543,27 @@ aside * input {
   text-decoration: none;
   margin-bottom: 0px; }
 
-.calender-list .date div {
+.date div {
   color: #949494; }
-.calender-list .time {
+
+.time {
   font-size: 14px;
   color: #949494; }
+
+.links a img {
+  width: 32px; }
+
+@media (min-width: 767px) {
+  .calendercarousel .carousel-control-prev {
+    left: 30%; } }
+@media (min-width: 767px) {
+  .calendercarousel .carousel-control-next {
+    right: 30%; } }
+.calendercarousel .carousel-control-prev, .calendercarousel .carousel-control-next {
+  height: 50px; }
+.calendercarousel .carousel-control-prev-icon {
+  background-image: url("../images/left.svg"); }
+.calendercarousel .carousel-control-next-icon {
+  background-image: url("../images/right.svg"); }
 
 /*# sourceMappingURL=main.css.map */

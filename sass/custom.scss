@@ -55,9 +55,7 @@ $link-hover-decoration: none;
 //   }
 // }
 
-img{
-  max-width: 100%;
-}
+
 table img{
   height: 30px;
 }
@@ -199,4 +197,16 @@ footer .accordion-button:not(.collapsed)::before{
 @import "sidebar";
 @import "searchbar";
 @import "resultscarousel";
-@import "calenderlist";
+
+.date div{
+  color: #949494;
+}
+.time{
+  font-size: 14px;
+  color: #949494;
+}
+.links a img{
+  width: 32px;
+}
+
+@import "calendercarousel.scss";

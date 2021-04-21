@@ -1,0 +1,21 @@
+.calendercarousel{
+    .carousel-control-prev{
+        @media (min-width:767px){
+            left: 30%;
+        }
+    }
+    .carousel-control-next{
+        @media (min-width:767px){
+            right: 30%;
+        }
+    }
+   .carousel-control-prev, .carousel-control-next{
+    height: 50px;
+    }
+    .carousel-control-prev-icon{
+        background-image: url("../images/left.svg");
+    }
+    .carousel-control-next-icon{
+        background-image: url("../images/right.svg");
+    }
+}

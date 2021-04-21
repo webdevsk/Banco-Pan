@@ -7,7 +7,8 @@ $theme-colors: (
   "danger": #FF5630,
   "gray": #616161,
   "dark": #414141,
-  "feedback":#018A5C
+  "feedback":#018A5C,
+  "gray-light": #E0E0E0
 
 );
 $body-color:  #414141;
@@ -82,7 +83,92 @@ table img.disabled{
 .searchbar .form-control:focus, aside .form-control:focus{
     box-shadow: none !important;
 }
-
+li::marker{
+  color: #03A9F4;
+}
+.bannercarousel .carousel-indicators [data-bs-target]{
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 50%;
+}
+.bannercarousel .carousel-indicators [data-bs-target].active{
+  width: 32px !important;
+  border-radius: 45%;
+}
+.nav-pills .nav-link:not(.active){
+  background: #E0E0E0 !important;
+}
+.accordion-item {
+  background-color: transparent !important;
+}
+footer button, footer a.nav-link{
+  color: #FFF !important;
+  background-color: transparent !important;
+  
+}
+.accordion-item{
+  border: 0px !important;
+}
+.accordion-body .nav-link{
+  padding: 0.1rem;
+  @media (max-width:767px){
+    padding: 0.5rem 0.1rem;
+  }
+}
+footer .accordion-body{
+  padding: 1rem 0rem;
+} 
+footer .accordion-button{
+  padding: 1rem 0rem;
+  @media (max-width:991px){
+    justify-content: center;
+  }
+}
+footer .collapse:not(.show) {
+  @media (min-width:1200px){
+    display: block;
+  }
+}
+footer .accordion-button{
+  @media (min-width:1200px){
+    cursor: default !important;
+  }
+}
+aside .accordion-body .nav-link, footer .accordion-body .nav-link{
+  padding: 0.5rem;
+}
+.accordion-button::after{
+  display: none;
+}
+.accordion-button:not(.collapsed)::after {
+  display: none;
+}
+.accordion-button::before{
+  flex-shrink: 0;
+  width: 0.625rem;
+  height: 0.625rem;
+  margin-right: 0.625rem;
+  content: "";
+  background-size: 0.625rem;
+  background-position: center;
+  background-image: url("../images/plus.svg");
+  // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23414141'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+.accordion-button:not(.collapsed)::before {
+  background-image: url("../images/minus.svg");
+  transform: rotate(180deg);
+}
+aside .accordion-button::before,
+aside .accordion-button:not(.collapsed)::before{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23414141'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+footer .accordion-button::before,
+footer .accordion-button:not(.collapsed)::before{
+  display: none;
+}
 @import "../bootstrap/scss/bootstrap";
   /* Sidebar Nav */
   aside{
@@ -105,9 +191,9 @@ table img.disabled{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 @import "breadcrumb";
 @import "nano-expansion";
 @import "sidebar";
 @import "searchbar";
-@import "scrollbar";
 

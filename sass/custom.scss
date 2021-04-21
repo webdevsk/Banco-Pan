@@ -177,7 +177,7 @@ footer .accordion-button:not(.collapsed)::before{
   aside * input{
       background-color: transparent !important;
   }
-.carousel-body{
+.bannercarousel .carousel-body{
     position: absolute;
     top: 0%;
     left: 0%;
@@ -185,7 +185,7 @@ footer .accordion-button:not(.collapsed)::before{
     height: 100%;
     color: #FFF;
 }
-.carousel-item{
+.bannercarousel .carousel-item{
     min-height: 450px;
     background-position: center;
     background-repeat: no-repeat;
@@ -195,4 +195,4 @@ footer .accordion-button:not(.collapsed)::before{
 @import "breadcrumb";
 @import "sidebar";
 @import "searchbar";
-
+@import "resultscarousel";

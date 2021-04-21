@@ -42,6 +42,9 @@ li::marker {
 .nav-pills .nav-link:not(.active) {
   background: #E0E0E0 !important; }
 
+aside .accordion {
+  margin-bottom: 16px; }
+
 .accordion-item {
   background-color: transparent !important; }
 
@@ -11542,5 +11545,11 @@ aside * input {
 .resultscarousel .carousel-body a h6, .resultscarousel .carousel-body a .h6 {
   text-decoration: none;
   margin-bottom: 0px; }
+
+.calender-list .date div {
+  color: #949494; }
+.calender-list .time {
+  font-size: 14px;
+  color: #949494; }
 
 /*# sourceMappingURL=main.css.map */

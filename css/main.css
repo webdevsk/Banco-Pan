@@ -11706,7 +11706,8 @@ aside * input {
     margin-bottom: 0; }
   .ecosystem .title {
     height: 100px;
-    padding: 5px 5px; }
+    padding: 5px 5px;
+    padding-top: 20px; }
     .ecosystem .title img {
       display: block;
       margin-right: auto;
@@ -11743,5 +11744,39 @@ aside * input {
       height: 15px;
       object-fit: cover;
       object-position: bottom; }
+
+.chartlabels {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+.color1 {
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  margin-right: 5px;
+  background-color: #03A9F4;
+  display: inline-block; }
+
+.color2 {
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  margin-right: 5px;
+  background: #0288D1;
+  display: inline-block; }
+
+.color3 {
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  margin-right: 5px;
+  background-color: #414141;
+  display: inline-block; }
+
+.chartlabels span {
+  font-size: 12px;
+  font-weight: 500; }
 
 /*# sourceMappingURL=main.css.map */

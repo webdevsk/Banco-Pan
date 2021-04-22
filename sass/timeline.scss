@@ -1,0 +1,91 @@
+.timeline{
+    background-color: #616161;
+    color: #FFFFFF;
+    .mobile-line{
+        position: relative;
+        display: block;
+        padding-left: 20px;
+        @media (min-width: 991px){
+            display: none;
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 6px;
+            background: #03A9F4;
+            top: 0;
+            right: 0;
+        }
+    }
+    .yearbox{
+        position: relative;
+        @media (max-width: 991px){
+            padding-left: 1.5rem;
+            &:before{
+                content: "";
+                position: absolute;
+                top: 30px;
+                left: -15px;
+                background: #03A9F4;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+            }
+        }
+        @media (min-width: 991px){
+            padding-right: 100px;
+            padding-bottom: 100px;
+        }
+        .year{
+            color: #03A9F4;
+            width: 120px;
+            font-size: 56px;
+            font-weight: 800;
+            @media (min-width: 991px){
+                font-size: 64px;
+            }
+        }
+    }
+    .first-line{
+        margin-top: 30px;
+    }
+    .line{
+        position: relative;
+        display: none;
+        @media (min-width: 991px){
+            display: block;
+            padding-left: 7px;
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: #03A9F4;
+            top: 0;
+            right: 0;
+        }
+    }
+    .paragraph{
+        margin-top: 20px;
+        position: relative;
+        margin-bottom: 6rem;
+        @media (max-width: 991px){
+            padding-left: 1.5rem;
+        }
+        @media (min-width: 991px){
+            padding-left: 100px;
+            &:before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -15px;
+                background: #03A9F4;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

@@ -11566,4 +11566,85 @@ aside * input {
 .calendercarousel .carousel-control-next-icon {
   background-image: url("../images/right.svg"); }
 
+.timeline {
+  background-color: #616161;
+  color: #FFFFFF; }
+  .timeline .mobile-line {
+    position: relative;
+    display: block;
+    padding-left: 20px; }
+    @media (min-width: 991px) {
+      .timeline .mobile-line {
+        display: none; } }
+    .timeline .mobile-line:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 6px;
+      background: #03A9F4;
+      top: 0;
+      right: 0; }
+  .timeline .yearbox {
+    position: relative; }
+    @media (max-width: 991px) {
+      .timeline .yearbox {
+        padding-left: 1.5rem; }
+        .timeline .yearbox:before {
+          content: "";
+          position: absolute;
+          top: 30px;
+          left: -15px;
+          background: #03A9F4;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%; } }
+    @media (min-width: 991px) {
+      .timeline .yearbox {
+        padding-right: 100px;
+        padding-bottom: 100px; } }
+    .timeline .yearbox .year {
+      color: #03A9F4;
+      width: 120px;
+      font-size: 56px;
+      font-weight: 800; }
+      @media (min-width: 991px) {
+        .timeline .yearbox .year {
+          font-size: 64px; } }
+  .timeline .first-line {
+    margin-top: 30px; }
+  .timeline .line {
+    position: relative;
+    display: none; }
+    @media (min-width: 991px) {
+      .timeline .line {
+        display: block;
+        padding-left: 7px; } }
+    .timeline .line:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: #03A9F4;
+      top: 0;
+      right: 0; }
+  .timeline .paragraph {
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 6rem; }
+    @media (max-width: 991px) {
+      .timeline .paragraph {
+        padding-left: 1.5rem; } }
+    @media (min-width: 991px) {
+      .timeline .paragraph {
+        padding-left: 100px; }
+        .timeline .paragraph:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -15px;
+          background: #03A9F4;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%; } }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,122 @@
+.ecosystem-overflow{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.ecosystem{
+    width: 971px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    .header{
+        width: 166px;
+        .title{
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 300%;
+                height: 100%;
+                background-image: url(../images/bluebg.svg);
+                background-size: contain;
+                z-index: -2;
+                background-repeat: no-repeat;
+                top: 0;
+                left: 0;
+            }
+        }
+        .title2{
+            padding: 5px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+    .finance{
+        width: 140px;
+        padding: 0px 5px;
+    }
+    .banking{
+        .steps{
+            display: flex;
+            flex-direction: row;
+            flex-flow: row;
+            .step{
+                width: 140px;
+                padding: 0px 5px;
+                .title{
+                    position: relative;
+                }
+                .bg{
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 200%;
+                        height: 100%;
+                        background-image: url(../images/skybg.svg);
+                        background-size: contain;
+                        z-index: -2;
+                        background-repeat: no-repeat;
+                        top: 0;
+                        left: -15%;
+                        overflow: visible;
+                    }
+                }
+            }
+        }
+    }
+    p{
+        margin-bottom: 0;
+    }
+    .title{
+        height: 100px;
+        padding: 5px 5px;
+        img{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 100%;
+            height: 30px;
+        }
+        small{
+            display: block;
+            color: #03A9F4;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+    .body{
+        height: 130px;
+        ul{
+            padding-left: 1rem !important;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            li{
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+        .light{
+            font-size: 12px;
+            font-weight: 500;
+            color: #757575;
+            font-style: italic;
+        }
+    }
+    .footer{
+        height: 70px;
+        text-align: center;
+        color: #03A9F4;
+        font-weight: 700;
+        img{
+            width: 100%;
+            height: 15px;
+            object-fit: cover;
+            object-position: bottom;
+        }
+    }
+
+}

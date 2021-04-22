@@ -11647,4 +11647,101 @@ aside * input {
           height: 24px;
           border-radius: 50%; } }
 
+.ecosystem-overflow {
+  overflow-x: scroll;
+  overflow-y: hidden; }
+
+.ecosystem {
+  width: 971px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row; }
+  .ecosystem .header {
+    width: 166px; }
+    .ecosystem .header .title {
+      display: flex;
+      align-items: flex-end;
+      position: relative; }
+      .ecosystem .header .title::before {
+        content: "";
+        position: absolute;
+        width: 300%;
+        height: 100%;
+        background-image: url(../images/bluebg.svg);
+        background-size: contain;
+        z-index: -2;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0; }
+    .ecosystem .header .title2 {
+      padding: 5px; }
+    .ecosystem .header p {
+      font-size: 16px;
+      font-weight: 700; }
+  .ecosystem .finance {
+    width: 140px;
+    padding: 0px 5px; }
+  .ecosystem .banking .steps {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row; }
+    .ecosystem .banking .steps .step {
+      width: 140px;
+      padding: 0px 5px; }
+      .ecosystem .banking .steps .step .title {
+        position: relative; }
+      .ecosystem .banking .steps .step .bg::before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        background-image: url(../images/skybg.svg);
+        background-size: contain;
+        z-index: -2;
+        background-repeat: no-repeat;
+        top: 0;
+        left: -15%;
+        overflow: visible; }
+  .ecosystem p {
+    margin-bottom: 0; }
+  .ecosystem .title {
+    height: 100px;
+    padding: 5px 5px; }
+    .ecosystem .title img {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 100%;
+      height: 30px; }
+    .ecosystem .title small, .ecosystem .title .small {
+      display: block;
+      color: #03A9F4;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center; }
+  .ecosystem .body {
+    height: 130px; }
+    .ecosystem .body ul {
+      padding-left: 1rem !important;
+      margin-top: 10px;
+      margin-bottom: 0px; }
+      .ecosystem .body ul li {
+        font-size: 12px;
+        font-weight: 500; }
+    .ecosystem .body .light {
+      font-size: 12px;
+      font-weight: 500;
+      color: #757575;
+      font-style: italic; }
+  .ecosystem .footer {
+    height: 70px;
+    text-align: center;
+    color: #03A9F4;
+    font-weight: 700; }
+    .ecosystem .footer img {
+      width: 100%;
+      height: 15px;
+      object-fit: cover;
+      object-position: bottom; }
+
 /*# sourceMappingURL=main.css.map */

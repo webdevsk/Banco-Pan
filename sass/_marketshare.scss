@@ -1,0 +1,49 @@
+.marketshare-overflow{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.marketshare{
+    width: 1000px;
+    h6{
+        margin-bottom: 60px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .flex{
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+    .content{
+        width: 700px;
+    }
+    .bg-img{
+        position: relative;
+        width: 300px;
+    }
+    .bg-img::after{
+        content: "";
+        background-image: url(../images/imagem.svg);
+        background-size: contain;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        background-position: top;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .footer{
+        .ftitem{
+            padding: 0px 5px;
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: bottom;
+            }
+        }
+    }
+}

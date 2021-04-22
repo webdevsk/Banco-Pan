@@ -24,7 +24,7 @@ $spacers: (
   5: $spacer * 3,
   6: $spacer * 3.5,
   7: $spacer * 4,
-  8: $spacer * 6,
+  8: $spacer * 5,
   9: $spacer * 9,
   10: $spacer * 12
 );
@@ -246,3 +246,5 @@ footer .accordion-button:not(.collapsed)::before{
   font-size: 12px;
   font-weight: 500;
 }
+
+@import "marketshare";

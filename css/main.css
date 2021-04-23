@@ -1,12 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-table img {
-  height: 30px; }
+.top-header {
+  background: #F5F5F5; }
 
-table img.disabled {
-  opacity: 0.5; }
+.finance h6, .finance .h6 {
+  font-size: 20px;
+  font-weight: 700; }
+
+.cards button.nav-link {
+  font-size: 20px;
+  font-weight: 700; }
+
+@media (min-width: 992px) {
+  .calender .date::after {
+    display: none;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    right: 0;
+    content: "";
+    width: 0.5rem;
+    height: 1px;
+    background-color: #414141; } }
+
+.alert-item {
+  padding-top: 1.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #dee2e6 !important; }
+
+.entry {
+  padding-bottom: 0.25rem;
+  padding-top: 2rem;
+  border-bottom: 1px solid #dee2e6 !important;
+  gap: 1.5rem; }
+  @media (max-width: 991px) {
+    .entry {
+      gap: 0.5rem; } }
+  .entry .links {
+    gap: 1rem !important; }
+
+.results .date {
+  position: relative;
+  padding-right: 2rem; }
+  @media (min-width: 992px) {
+    .results .date::after {
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      right: 0;
+      content: "";
+      width: 0.5rem;
+      height: 1px;
+      background-color: #414141; } }
+.results .content .links a:hover img {
+  filter: invert(53%) sepia(89%) saturate(2808%) hue-rotate(166deg) brightness(100%) contrast(98%); }
+
+table {
+  min-width: 700px; }
+  table img {
+    height: 30px; }
+  table table img.disabled {
+    opacity: 0.5; }
+  table a:hover img {
+    filter: invert(53%) sepia(89%) saturate(2808%) hue-rotate(166deg) brightness(100%) contrast(98%); }
 
 .accordion-button {
-  font-weight: 700 !important; }
+  font-weight: 700 !important;
+  padding: 1rem 1rem !important; }
+  @media (max-width: 991px) {
+    .accordion-button {
+      padding: 1rem 0rem !important; } }
+
+.cards {
+  background-color: #F5F5F5; }
 
 #header {
   position: sticky;
@@ -27,7 +92,9 @@ table img.disabled {
 li::marker {
   color: #03A9F4; }
 
-.container a:hover img {
+.resultscarousel .carousel-buttons .nav-link:hover {
+  box-shadow: 10px 10px 20px #dbdbdb, -10px -10px 20px #ffffff; }
+.resultscarousel a:hover img {
   filter: invert(53%) sepia(89%) saturate(2808%) hue-rotate(166deg) brightness(100%) contrast(98%); }
 
 label {
@@ -44,7 +111,10 @@ label {
   border: 1px solid #414141 !important; }
 
 .form-check-input {
-  border: 2px solid #414141 !important; }
+  border: 2px solid #414141 !important;
+  width: 20px !important;
+  height: 20px !important;
+  margin-top: 0rem !important; }
 
 .form-check-input:checked {
   background-color: #03A9F4;
@@ -52,6 +122,9 @@ label {
 
 .form-check-input:checked[type="radio"] {
   background-image: none !important; }
+
+.form-check-input[type="checkbox"] {
+  border-radius: 0rem !important; }
 
 .bannercarousel .carousel-indicators [data-bs-target] {
   width: 24px !important;
@@ -72,7 +145,8 @@ label {
   opacity: 1; }
 
 .nav-pills .nav-link:not(.active) {
-  background: #E0E0E0 !important; }
+  background: #E0E0E0 !important;
+  color: #949494 !important; }
 
 aside .accordion {
   margin-bottom: 16px; }
@@ -89,6 +163,9 @@ footer button, footer a.nav-link {
 
 aside .accordion-body {
   padding: 0rem 3rem !important; }
+  @media (max-width: 767px) {
+    aside .accordion-body {
+      padding: 0rem 1rem; } }
 
 .tabs-letter .accordion-button {
   padding: 1rem 0rem; }
@@ -105,28 +182,50 @@ aside .accordion-item, footer .accordion-item, .cards .accordion-item {
 footer .accordion-body {
   padding: 1rem 0rem; }
 
+aside .accordion-button {
+  padding: 1rem 0rem; }
+
 footer .accordion-button {
   padding: 1rem 0rem; }
   @media (max-width: 991px) {
     footer .accordion-button {
       justify-content: center; } }
+  @media (max-width: 767px) {
+    footer .accordion-button {
+      justify-content: flex-start; } }
 
 @media (min-width: 1200px) {
   footer .collapse:not(.show) {
     display: block; } }
 
-@media (min-width: 1200px) {
-  footer .accordion-button {
-    cursor: default !important; } }
+footer .accordion-button {
+  padding: 1rem 0rem !important; }
+  @media (min-width: 1200px) {
+    footer .accordion-button {
+      cursor: default !important; } }
 
 aside .accordion-body .nav-link, footer .accordion-body .nav-link {
   padding: 0.5rem; }
+  @media (min-width: 992px) {
+    aside .accordion-body .nav-link, footer .accordion-body .nav-link {
+      padding: 0.5rem 0rem !important; } }
 
 .accordion-button::after {
   display: none; }
 
 .accordion-button:not(.collapsed)::after {
   display: none; }
+
+.cards .accordion-button {
+  padding: 5px 0rem;
+  font-size: 20px;
+  font-weight: 700; }
+  .cards .accordion-button::before {
+    background-image: none;
+    background-color: #03A9F4;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%; }
 
 .accordion-button::before {
   flex-shrink: 0;
@@ -633,8 +732,8 @@ progress {
 .container-xl,
 .container-xxl {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--bs-gutter-x, 2rem);
+  padding-left: var(--bs-gutter-x, 2rem);
   margin-right: auto;
   margin-left: auto; }
 
@@ -1915,7 +2014,7 @@ progress {
   --bs-table-active-color: #414141;
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
   --bs-table-hover-color: #414141;
-  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  --bs-table-hover-bg: #E0E0E0;
   width: 100%;
   margin-bottom: 1rem;
   color: #414141;
@@ -4376,7 +4475,7 @@ textarea.form-control-lg {
   max-width: 100%;
   pointer-events: none; }
   .toast-container > :not(:last-child) {
-    margin-bottom: 0.75rem; }
+    margin-bottom: 2rem; }
 
 .toast-header {
   display: flex;
@@ -11665,7 +11764,9 @@ aside * input {
   margin-bottom: 0px; }
 
 .date div {
-  color: #949494; }
+  color: #949494;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .time {
   font-size: 14px;
@@ -11989,13 +12090,9 @@ aside * input {
   .marketshare .footer .ftitem:nth-child(3) {
     width: 257px; }
 
-.result-list .result-item {
-  padding-top: 30px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #0000002a; }
-  .result-list .result-item .entry-title {
-    margin-bottom: 8px; }
-  .result-list .result-item .entry-link a {
-    color: #1A0DAB; }
+.result-list a {
+  color: #1A0DAB !important;
+  display: inline-block;
+  margin-top: 1rem; }
 
 /*# sourceMappingURL=main.css.map */

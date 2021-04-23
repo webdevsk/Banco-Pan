@@ -16,7 +16,7 @@
 <body>
 <header id="header">
     <!-- top header -->
-  <div class="top-header d-none d-lg-block container-fluid">
+  <div class="top-header d-none d-lg-block container">
       <div class="row gx-0 py-lg-1 align-items-center">
 
           <div class="col-1 text-center">
@@ -54,16 +54,16 @@
   </div>
   <!-- top header -->
   <!-- navbar -->
-  <div class="container-fliud">
-      <div class="row py-4 py-lg-3 gx-0 justify-content-between justify-content-lg-start align-items-end">
+  <div class="container">
+      <div class="row py-0 py-lg-3 pt-4 pb-3 gx-0 justify-content-between justify-content-xl-start align-items-end">
 
-        <div class="col-3 col-lg-1 text-center">
+        <div class="col-3 col-lg-1">
             <button class="btn sidebar-toggle p-0">
-                <img class="mw-100" src="images/nav.svg" alt="nav">
+                <img class="w-100" src="images/nav.svg" alt="nav">
             </button>
         </div>
 
-        <div class="col-5 col-lg-2">
+        <div class="col-5 col-lg-2 text-end">
             <a href="index.html">
                 <img class="mw-100" src="images/brand-content.svg" alt="brand-content">
             </a>
@@ -82,25 +82,29 @@
                 Alertas  
                 <img class="mw-100 px-1 pb-1" src="images/alerted.svg" alt="alert">
               </button>
-              <ul style="height: 400px;" class="scroll dropdown-menu dropdown-menu-end navbar-nav-scroll shadow py-4" aria-labelledby="dropdownMenuButton1">
-                <li class="user-select-none text-gray px-5 pb-3">Últimas Atualizações</li>
-                <li class="py-1">
-
-                    <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+              <ul style="max-height: 70vh; width: 400px;" class="scroll px-4 dropdown-menu dropdown-menu-end navbar-nav-scroll shadow-lg pt-4" aria-labelledby="dropdownMenuButton1">
+                <li class="user-select-none d-flex px-3 justify-content-between text-gray">
+                  <div>Últimas Atualizações</div>
+                  <button type="button" class="btn-close" data-bs-toggle="dropdown" aria-label="Close"></button>
                 </li>
-                <li class="py-1">
 
-                    <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
-                </li>
-                <li class="py-1">
+                <li class="alert-item">
 
-                    <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                    <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
                 </li>
-                <li class="py-1">
+                <li class="alert-item">
 
-                    <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                    <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
                 </li>
-                <li><a class="nav-link text-nowrap px-5 pt-3" href="#">Ver mais atualizações</a></li>
+                <li class="alert-item">
+
+                    <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                </li>
+                <li class="alert-item">
+
+                    <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                </li>
+                <li><a class="nav-link text-nowrap text-primary py-3" href="#">Ver mais atualizações</a></li>
               </ul>
             </div>
         </div>
@@ -118,7 +122,7 @@
   <!-- navbar -->
   <!-- navbar-aside -->
   <aside class="sidebar">
-    <div class="sidebar-header d-flex align-items-center justify-content-start px-5 justify-content-lg-center pt-7 py-4 bg-dark">
+    <div class="sidebar-header d-flex align-items-center justify-content-start px-5 justify-content-lg-center pt-8 py-4 bg-dark">
     <button class="close-btn me-5 me-lg-7 btn">
       <img class="mw-100" src="images/close.svg" alt="close">
     </button>
@@ -149,25 +153,29 @@
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   <img class="mw-100 px-1 pb-1" src="images/alerted.svg" alt="alert">
                 </button>
-                <ul class="dropdown-menu navbar-nav-scroll dropdown-menu-end shadow py-4" aria-labelledby="dropdownMenuButton1">
-                  <li class="user-select-none text-gray px-5 pb-3">Últimas Atualizações</li>
-                  <li class="py-1">
-
-                      <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                <ul style="max-height: 70vh; min-width: 350px;" class="scroll px-4 dropdown-menu dropdown-menu-end navbar-nav-scroll shadow-lg pt-4" aria-labelledby="dropdownMenuButton1">
+                  <li class="user-select-none d-flex px-3 justify-content-between text-gray">
+                    <div>Últimas Atualizações</div>
+                    <button type="button" class="btn-close" data-bs-toggle="dropdown" aria-label="Close"></button>
                   </li>
-                  <li class="py-1">
 
-                      <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
-                  </li>
-                  <li class="py-1">
+                  <li class="alert-item">
 
-                      <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                      <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
                   </li>
-                  <li class="py-1">
+                  <li class="alert-item">
 
-                      <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                      <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
                   </li>
-                  <li><a class="nav-link text-nowrap px-5 pt-3" href="#">Ver mais atualizações</a></li>
+                  <li class="alert-item">
+
+                      <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                  </li>
+                  <li class="alert-item">
+
+                      <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                  </li>
+                  <li><a class="nav-link text-nowrap text-primary py-3" href="#">Ver mais atualizações</a></li>
                 </ul>
               </div>
           </div>
@@ -185,7 +193,7 @@
     <!-- nav accordion -->
     <!-- nav accordion -->
     <!-- nav accordion -->
-    <div class="accordion accordion-flush ps-lg-8 mt-4 mt-lg-7" id="accordionNav1">
+    <div class="accordion accordion-flush ps-4 ps-lg-8 mt-4 mt-lg-7" id="accordionNav1">
       <div class="accordion-item">
         <h2 class="accordion-header" id="nav-heading1">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">
@@ -239,7 +247,7 @@
         </div>
       </div>
       <!-- normal link -->
-      <a class="nav-link ps-7 fw-bolder text-dark ps-lg-7 ms-1" href="#">Sustentabilidade</a>
+      <a class="nav-link fw-bolder text-dark ms-4" href="#">Sustentabilidade</a>
       <div class="accordion-item">
         <h2 class="accordion-header" id="nav-heading3">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">
@@ -428,7 +436,7 @@
 
 
 
-<section class="py-7">
+<section class="py-8">
   <div class="container">
     <h2 class="fw-bolder mb-4">
       <span class="text-primary">Indo Além do Crédito:</span>
@@ -436,7 +444,7 @@
     </h2>
 
     <p class="mb-4">Somos uma plataforma completa de soluções financeiras com foco no classe C, D e E. Um Banco para quem faz!</p>
-    <p class="mb-7">Com longa experiência na concessão de crédito no Brasil, enxergamos nesse produto a principal ferramenta de atração, engajamento e monetização dos clientes, entretanto, vamos muito além do crédito.</p>
+    <p class="mb-8">Com longa experiência na concessão de crédito no Brasil, enxergamos nesse produto a principal ferramenta de atração, engajamento e monetização dos clientes, entretanto, vamos muito além do crédito.</p>
 
 
 
@@ -560,7 +568,7 @@
 <!-- platform -->
 <!-- platform -->
 <!-- platform -->
-<section class="plataform bg-gray py-7 mb-7 text-white">
+<section class="plataform bg-gray py-8 mb-8 text-white">
   <div class="container">
     <div class="row gy-5">
 
@@ -615,8 +623,8 @@
 <!-- platform -->
 <!-- platform -->
 <!-- platform -->
-
-<div class="container">
+<section class="">
+  <div class="container">
   <p>Possuímos uma plataforma digital completa, lançada em fevereiro de 2020, para atender as necessidades do nosso público alvo e seguimos ampliando nossa base de produtos e serviços. Porém, entendemos que estamos apenas no começo da nossa jornada, construindo um banco focado no nosso cliente, explorando todo o ecossistema de serviços financeiros para as classes C, D e E.​</p>
   <br>
   <p>Usamos tecnologia para alcançar clientes e parceiros, promovendo vantagem competitiva frente a​
@@ -639,11 +647,13 @@
     <br>
   </ol>
 </div>
+</section>
+
 
 
 
 <!-- charts section -->
-<section class="chart-section py-7">
+<section class="chart-section py-8">
   <div class="container">
     <div class="row row-cols-1 row-cols-xl-2 gx-5 gy-7">
 
@@ -724,14 +734,18 @@
     </div>
   </div>
 </section>
+
 <!-- charts section -->
-<div class="container">
+<section class="">
+  <div class="container">
   <p class="mb-8">Crescemos ajudando as pessoas a consquistarem seus sonhos sempre dando um crédito conservador, reafirmando a visão de longo prazo baseada na nossa presença relevante nos mercados de atuação, na nossa capaciadade de distribuição de produtos através do B2B ou atráves do crescente B2C digital, com uma excelente expertise em crédito, impulsionando engajamento com uma alta capacidade de entrega, resultando baixo risco de operação​</p>
 
   <h2 class="fw-bolder mb-5"><span class="text-primary">Brasil: </span>Amplo mercado em Crescimento</h2>
   <h3 class="fw-bolder">210 MM <span class="fs-6">(população brasileira)</span></h3>
   <h3 class="fw-bolder">160 MM <span class="fs-6">(baixa renda)</span></h3>
 </div>
+</section>
+
 
 
 

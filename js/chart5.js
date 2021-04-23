@@ -12,7 +12,7 @@ var trace1 = {
   textposition: 'outside',
   hoverinfo: 'none',
   marker: {
-    color: '#03A9F4',
+    color: ['#616161', '#616161', '#616161', '#616161', '#616161', '#03A9F4', '#03A9F4'],
     opacity: 1.0
   }
 };

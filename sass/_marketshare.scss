@@ -4,7 +4,7 @@
 }
 
 .marketshare{
-    width: 1000px;
+    width: 1200px;
     h6{
         margin-bottom: 60px;
         font-size: 18px;
@@ -16,8 +16,53 @@
         flex-flow: row;
         flex-wrap: wrap;
     }
+    .header{
+        border-bottom: 1px solid #414141;
+        margin-bottom: 10px;
+        .title{
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 5px;
+            padding-bottom: 5px;
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -6.5px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                background-color: #414141;
+                z-index: 5;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        .blue{
+            color: #03A9F4;
+            &::after{
+                background-color: #03A9F4;
+            }
+        }
+        .line::before{
+            content: "";
+            position: absolute;
+            z-index: 5;
+            width: 200px;
+            height: 3px;
+            background-color: #FFF;
+            bottom: -200px;
+            left: 0;
+            transform: rotate(-12deg);
+        }
+    }
     .content{
-        width: 700px;
+        width: 900px;
     }
     .bg-img{
         position: relative;
@@ -43,7 +88,23 @@
                 width: 100%;
                 object-fit: cover;
                 object-position: bottom;
+                height: 15px;
             }
+            p{
+                color: #03A9F4;
+                padding: 0px 5px;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+        .ftitem:first-child{
+            width: 512px;
+        }
+        .ftitem:nth-child(2){
+            width: 128px;
+        }
+        .ftitem:nth-child(3){
+            width: 257px;
         }
     }
 }

@@ -11784,7 +11784,7 @@ aside * input {
   overflow-y: hidden; }
 
 .marketshare {
-  width: 1000px; }
+  width: 1200px; }
   .marketshare h6, .marketshare .h6 {
     margin-bottom: 60px;
     font-size: 18px;
@@ -11794,8 +11794,46 @@ aside * input {
     flex-direction: row;
     flex-flow: row;
     flex-wrap: wrap; }
+  .marketshare .header {
+    border-bottom: 1px solid #414141;
+    margin-bottom: 10px; }
+    .marketshare .header .title {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 5px;
+      padding-bottom: 5px; }
+      .marketshare .header .title::after {
+        content: "";
+        position: absolute;
+        bottom: -6.5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: #414141;
+        z-index: 5; }
+      .marketshare .header .title p {
+        font-size: 14px;
+        font-weight: 500; }
+    .marketshare .header .blue {
+      color: #03A9F4; }
+      .marketshare .header .blue::after {
+        background-color: #03A9F4; }
+    .marketshare .header .line::before {
+      content: "";
+      position: absolute;
+      z-index: 5;
+      width: 200px;
+      height: 3px;
+      background-color: #FFF;
+      bottom: -200px;
+      left: 0;
+      transform: rotate(-12deg); }
   .marketshare .content {
-    width: 700px; }
+    width: 900px; }
   .marketshare .bg-img {
     position: relative;
     width: 300px; }
@@ -11816,6 +11854,18 @@ aside * input {
     .marketshare .footer .ftitem img {
       width: 100%;
       object-fit: cover;
-      object-position: bottom; }
+      object-position: bottom;
+      height: 15px; }
+    .marketshare .footer .ftitem p {
+      color: #03A9F4;
+      padding: 0px 5px;
+      font-size: 14px;
+      font-weight: 700; }
+  .marketshare .footer .ftitem:first-child {
+    width: 512px; }
+  .marketshare .footer .ftitem:nth-child(2) {
+    width: 128px; }
+  .marketshare .footer .ftitem:nth-child(3) {
+    width: 257px; }
 
 /*# sourceMappingURL=main.css.map */

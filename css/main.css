@@ -1,6 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .top-header {
   background: #F5F5F5; }
+  .top-header .header-border {
+    position: relative; }
+    .top-header .header-border::before {
+      content: '';
+      top: 10%;
+      left: 0;
+      width: 1px;
+      height: 80%;
+      background-color: #414141;
+      position: absolute; }
+    .top-header .header-border::after {
+      content: '';
+      top: 10%;
+      right: 0;
+      width: 1px;
+      height: 80%;
+      background-color: #414141;
+      position: absolute; }
 
 .finance h6, .finance .h6 {
   font-size: 20px;
@@ -98,6 +116,9 @@ table {
 li::marker {
   color: #03A9F4; }
 
+.chart-section {
+  background: #F5F5F5; }
+
 .resultscarousel .carousel-buttons .nav-link {
   border-radius: 6px; }
   @media (max-width: 991px) {
@@ -182,6 +203,8 @@ aside .accordion-body {
 
 .tabs-letter .accordion-button {
   padding: 1rem 0rem; }
+.tabs-letter .accordion-body {
+  background: #F5F5F5; }
 
 aside .accordion-item, footer .accordion-item, .cards .accordion-item {
   border: 0px !important; }

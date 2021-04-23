@@ -21,6 +21,8 @@ var data = [trace1];
 
 var layout = {
     autosize: 'true',
+    plot_bgcolor:"#F5F5F5",
+    paper_bgcolor:"#F5F5F5",
     xaxis:{autotick: false},
     margin: {t:50,b:50,l:0,r:0},
     font: {size: 14},

@@ -66,6 +66,8 @@ var trace4 = {
 var data = [trace1, trace2, trace3, trace4];
 
 var layout = {
+  plot_bgcolor:"#F5F5F5",
+  paper_bgcolor:"#F5F5F5",
   barmode: 'stack',
   autosize: 'true',
   xaxis:{autotick: false},

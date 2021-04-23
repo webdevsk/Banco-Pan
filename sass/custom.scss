@@ -60,6 +60,27 @@ $container-padding-x: 2rem;
 
 .top-header{
   background: #F5F5F5;
+  .header-border{
+    position: relative;
+    &::before{
+      content: '';
+      top: 10%;
+      left: 0;
+      width: 1px;
+      height: 80%;
+      background-color: #414141;
+      position: absolute;
+    }
+    &::after{
+      content: '';
+      top: 10%;
+      right: 0;
+      width: 1px;
+      height: 80%;
+      background-color: #414141;
+      position: absolute;
+    }
+  }
 }
 .finance h6{
   font-size: 20px;
@@ -186,6 +207,9 @@ table{
 li::marker{
   color: #03A9F4;
 }
+.chart-section{
+  background: #F5F5F5;
+}
 .resultscarousel{
   .carousel-buttons .nav-link{
     border-radius: 6px;
@@ -282,9 +306,14 @@ aside .accordion-body {
       padding: 0rem 1rem;
     }
 }
-.tabs-letter .accordion-button{
-  padding: 1rem 0rem;
-}
+.tabs-letter{
+  .accordion-button{
+    padding: 1rem 0rem;
+  }
+  .accordion-body{
+    background: #F5F5F5;
+  }
+} 
 aside .accordion-item, footer .accordion-item, .cards .accordion-item{
   border: 0px !important;
 }

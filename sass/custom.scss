@@ -187,6 +187,15 @@ li::marker{
   color: #03A9F4;
 }
 .resultscarousel{
+  .carousel-buttons .nav-link{
+    border-radius: 6px;
+    @media(max-width: 991px){
+      margin-right: 10px;
+      margin-left: 10px;
+      align-items: flex-end;
+      
+    }
+  }
   .carousel-buttons .nav-link:hover{
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
   }

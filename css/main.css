@@ -11989,4 +11989,13 @@ aside * input {
   .marketshare .footer .ftitem:nth-child(3) {
     width: 257px; }
 
+.result-list .result-item {
+  padding-top: 30px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #0000002a; }
+  .result-list .result-item .entry-title {
+    margin-bottom: 8px; }
+  .result-list .result-item .entry-link a {
+    color: #1A0DAB; }
+
 /*# sourceMappingURL=main.css.map */

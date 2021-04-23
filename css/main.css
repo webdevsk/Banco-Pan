@@ -70,8 +70,8 @@ table {
     .accordion-button {
       padding: 1rem 0rem !important; } }
 
-.cards, .cards .accordion-body {
-  background-color: #F5F5F5; }
+.cards, .cards .accordion-body, .cards .accordion-button {
+  background-color: #F5F5F5 !important; }
 
 .cards .accordion-button {
   padding: .5rem 0rem !important; }
@@ -104,7 +104,7 @@ li::marker {
     .resultscarousel .carousel-buttons .nav-link {
       margin-right: 10px;
       margin-left: 10px;
-      align-items: fle; } }
+      align-items: flex-end; } }
 .resultscarousel .carousel-buttons .nav-link:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
 .resultscarousel a:hover img {

@@ -16,99 +16,105 @@
 <body>
   <header id="header">
     <!-- top header -->
-  <div class="top-header d-none d-lg-block container-fluid">
-      <div class="row gx-0 py-lg-1 align-items-center">
+  <div class="top-header d-none d-lg-block">
+      <div class="container">
+        <div class="row gx-0 py-lg-1 align-items-center">
 
-          <div class="col-1 text-center">
-              <a href="#" class="fw-bold text-dark text-decoration-underline" >Institucional</a>
-          </div>
+            <div class="col-1 text-center">
+                <a href="#" class="fw-bold text-dark text-decoration-underline" >Institucional</a>
+            </div>
 
-          <div class="offset-3 offset-xl-5 offset-xxl-5 col-4 col-xl-3 text-center">
-              <div class="content text-center">
-                  <img class="d-inline px-2" src="images/stock.svg" alt="stock">
-                  <div class="d-inline fw-bold text-primary px-1">BPAN4:</div>
-                  <div class="d-inline fw-bolder">R$ 21,40</div>
-                  <span class="d-inline px-1">1,8%</span>
-                  <span class="d-inline text-feedback px-1">+1,20</span>
-                  <img class="d-inline pb-1" src="images/vector2.svg" alt="stock">
-              </div>
-          </div>
+            <div class="offset-2 offset-xl-3 offset-xxl-5 col-4 col-xl-4 col-xxl-3 text-center">
+                <div class="content text-center">
+                    <img class="d-inline px-2" src="images/stock.svg" alt="stock">
+                    <div class="d-inline fw-bold text-primary px-1">BPAN4:</div>
+                    <div class="d-inline fw-bolder">R$ 21,40</div>
+                    <span class="d-inline px-1">1,8%</span>
+                    <span class="d-inline text-feedback px-1">+1,20</span>
+                    <img class="d-inline pb-1" src="images/vector2.svg" alt="stock">
+                </div>
+            </div>
 
-          <div class="col-3 col-xl-2 col-xxl-2 text-center border-dark border-start border-end border-1">
-              <div class="content text-center">
-                  <p class="d-inline">Acessibilidade</p>
-                  <button class="btn btn-sm px-1 ">A-</button>
-                  <button class="btn btn-sm px-1 ">A+</button>
-                  <button class="btn btn-sm px-1 pt-1"><img class="" src="images/darkmode.svg" alt="darkmode"></button>
-              </div>
-          </div>
+            <div class="col-3 col-xl-3 col-xxl-2 text-center header-border">
+                <div class="content text-center">
+                    <p class="d-inline">Acessibilidade</p>
+                    <button class="btn btn-sm px-1 ">A-</button>
+                    <button class="btn btn-sm px-1 ">A+</button>
+                    <button class="btn btn-sm px-1 pt-1"><img class="" src="images/darkmode.svg" alt="darkmode"></button>
+                </div>
+            </div>
 
-          <div class="col-1 text-center">
-              <div class="content">
-                  <button active class="btn btn-sm text-primary">PT</button>
-                  <span class=" border-start border-1 pb-1 border-dark"></span>
-                  <button class="btn btn-sm">EN</button>
-              </div>
-          </div>
+            <div class="col-2 col-xl-1 text-end text-xl-center">
+                <div class="content">
+                    <button active class="btn btn-sm text-primary">PT</button>
+                    <span class=" border-start border-1 pb-1 border-dark"></span>
+                    <button class="btn btn-sm">EN</button>
+                </div>
+            </div>
+        </div>
       </div>
   </div>
   <!-- top header -->
   <!-- navbar -->
-  <div class="container-fliud">
-      <div class="row py-4 py-lg-3 gx-0 justify-content-between justify-content-lg-start align-items-end">
+  <div class="container">
+      <div class="row py-0 py-lg-3 pt-4 pb-3 gx-0 justify-content-between justify-content-xl-start align-items-end">
 
-        <div class="col-3 col-lg-1 text-center">
+        <div class="col-3 col-lg-1">
             <button class="btn sidebar-toggle p-0">
-                <img class="mw-100" src="images/nav.svg" alt="nav">
+                <img class="w-100" src="images/nav.svg" alt="nav">
             </button>
         </div>
 
-        <div class="col-5 col-lg-2">
+        <div class="col-5 col-lg-2 text-end">
             <a href="index.html">
                 <img class="mw-100" src="images/brand-content.svg" alt="brand-content">
             </a>
         </div>
 
-        <div class="d-none d-lg-block offset-lg-3 offset-xl-5 col-lg-2 col-xl-2 text-center text-xl-end">
+        <div class="d-none d-lg-block offset-lg-2 offset-xl-4 col-lg-2 col-xl-2 text-end text-xl-end">
             <button class="btn searchbar-toggle">
                 Buscar 
-                <img class="mw-100 px-1 pb-1" src="images/search.svg" alt="search">
+                <img class=" pb-1 ps-1" src="images/search.svg" alt="search">
             </button>
         </div>
 
-        <div class="d-none d-lg-block col-lg-2 col-xl-1 text-center">
+        <div class="d-none d-lg-block col-lg-2 col-xl-2 text-xl-center text-end">
             <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 Alertas  
-                <img class="mw-100 px-1 pb-1" src="images/alerted.svg" alt="alert">
+                <img class=" pb-1 ps-1" src="images/alerted.svg" alt="alert">
               </button>
-              <ul style="height: 400px;" class="scroll dropdown-menu dropdown-menu-end navbar-nav-scroll shadow py-4" aria-labelledby="dropdownMenuButton1">
-                <li class="user-select-none text-gray px-5 pb-3">Últimas Atualizações</li>
-                <li class="py-1">
-
-                    <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+              <ul style="max-height: 70vh; width: 400px;" class="scroll px-4 dropdown-menu dropdown-menu-end navbar-nav-scroll shadow-lg pt-4" aria-labelledby="dropdownMenuButton1">
+                <li class="user-select-none d-flex px-3 justify-content-between text-gray">
+                  <div>Últimas Atualizações</div>
+                  <button type="button" class="btn-close" data-bs-toggle="dropdown" aria-label="Close"></button>
                 </li>
-                <li class="py-1">
 
-                    <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
-                </li>
-                <li class="py-1">
+                <li class="alert-item">
 
-                    <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                    <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
                 </li>
-                <li class="py-1">
+                <li class="alert-item">
 
-                    <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                    <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
                 </li>
-                <li><a class="nav-link text-nowrap px-5 pt-3" href="#">Ver mais atualizações</a></li>
+                <li class="alert-item">
+
+                    <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                </li>
+                <li class="alert-item">
+
+                    <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                </li>
+                <li><a class="nav-link text-nowrap text-primary py-3" href="#">Ver mais atualizações</a></li>
               </ul>
             </div>
         </div>
 
-        <div class="d-none d-lg-block col-lg-2 col-xl-1 text-center">
+        <div class="d-none d-lg-block col-lg-2 col-xl-1 text-end">
             <button class="btn">
-                CVM  
-                <img class="mw-100 px-1 pb-1" src="images/pdf 1.svg" alt="pdf 1">
+                CVM
+                <img class="pb-1" src="images/pdf 1.svg" alt="pdf 1">
             </button>
         </div>
 
@@ -118,7 +124,7 @@
   <!-- navbar -->
   <!-- navbar-aside -->
   <aside class="sidebar">
-    <div class="sidebar-header d-flex align-items-center justify-content-start px-5 justify-content-lg-center pt-7 py-4 bg-dark">
+    <div class="sidebar-header d-flex align-items-center justify-content-start px-5 justify-content-lg-center pt-8 py-4 bg-dark">
     <button class="close-btn me-5 me-lg-7 btn">
       <img class="mw-100" src="images/close.svg" alt="close">
     </button>
@@ -135,7 +141,7 @@
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="" aria-label="Search Button" aria-describedby="search-btn2">
                     <button type="submit" class="btn" id="search-btn2">
-                        <img class="mw-100 px-1 pb-1" src="images/search.svg" alt="search">
+                        <img class="mw-100px-1 pb-1" src="images/search.svg" alt="search">
                     </button>
                   </div>
               </form>
@@ -147,34 +153,38 @@
               </button> -->
               <div class="dropdown text-center">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="mw-100 px-1 pb-1" src="images/alerted.svg" alt="alert">
+                  <img class=" pb-1" src="images/alerted.svg" alt="alert">
                 </button>
-                <ul class="dropdown-menu navbar-nav-scroll dropdown-menu-end shadow py-4" aria-labelledby="dropdownMenuButton1">
-                  <li class="user-select-none text-gray px-5 pb-3">Últimas Atualizações</li>
-                  <li class="py-1">
-
-                      <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                <ul style="max-height: 50vh; min-width: 350px;" class="scroll px-4 dropdown-menu dropdown-menu-end navbar-nav-scroll shadow-lg pt-4" aria-labelledby="dropdownMenuButton1">
+                  <li class="user-select-none d-flex px-3 justify-content-between text-gray">
+                    <div>Últimas Atualizações</div>
+                    <button type="button" class="btn-close" data-bs-toggle="dropdown" aria-label="Close"></button>
                   </li>
-                  <li class="py-1">
 
-                      <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
-                  </li>
-                  <li class="py-1">
+                  <li class="alert-item">
 
-                      <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                      <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
                   </li>
-                  <li class="py-1">
+                  <li class="alert-item">
 
-                      <a class="dropdown-item px-5" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                      <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
                   </li>
-                  <li><a class="nav-link text-nowrap px-5 pt-3" href="#">Ver mais atualizações</a></li>
+                  <li class="alert-item">
+
+                      <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                  </li>
+                  <li class="alert-item">
+
+                      <a class="dropdown-item text-wrap" href="#"><small class="dropdown-item text-gray">29/03/2021</small>Teleconferência 4T20</a>
+                  </li>
+                  <li><a class="nav-link text-nowrap text-primary py-3" href="#">Ver mais atualizações</a></li>
                 </ul>
               </div>
           </div>
 
           <div class="col-2">
               <button class="btn">
-                  <img class="mw-100 px-1 pb-1" src="images/pdf 1.svg" alt="pdf 1">
+                  <img class=" pb-1" src="images/pdf 1.svg" alt="pdf 1">
               </button>
           </div>
 
@@ -185,7 +195,7 @@
     <!-- nav accordion -->
     <!-- nav accordion -->
     <!-- nav accordion -->
-    <div class="accordion accordion-flush ps-lg-8 mt-4 mt-lg-7" id="accordionNav1">
+    <div class="accordion accordion-flush ps-4 ps-lg-8 mt-4 mt-lg-7" id="accordionNav1">
       <div class="accordion-item">
         <h2 class="accordion-header" id="nav-heading1">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">
@@ -239,7 +249,7 @@
         </div>
       </div>
       <!-- normal link -->
-      <a class="nav-link ps-7 fw-bolder text-dark ps-lg-7 ms-1" href="#">Sustentabilidade</a>
+      <a class="nav-link fw-bolder text-dark ms-2 ms-lg-4" href="#">Sustentabilidade</a>
       <div class="accordion-item">
         <h2 class="accordion-header" id="nav-heading3">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">
@@ -401,6 +411,7 @@
   <!-- header ends here -->
   <!-- header ends here -->
   <!-- header ends here -->
+
 
       <!-- breadcrumbs -->
       <!-- breadcrumbs -->
@@ -570,20 +581,23 @@
   <!-- footer -->
   <!-- footer -->
   <!-- footer -->
-  <footer class="bg-dark pt-4 pb-3 text-white">
+  <footer class="bg-dark pt-5 pb-3 text-white">
     <div class="container">
-    <div class="row align-items-center">
+      <div class="row  align-items-center">
 
         <div class="col-12 col-lg-6">
-        <div class="row gx-4 gy-4 align-items-end text-center justify-content-center justify-content-lg-start text-lg-start">
-            <img class="col-6 col-sm-4 col-md-3 mw-100 col-lg-5 col-xl-4 pe-lg-4" src="images/brand-white.svg" alt="brand-white">
+        <div class="row gx-4 gy-4 align-items-end text-md-center justify-content-md-center justify-content-lg-start text-lg-start">
+          <div class="img-base">
+            <img style="width: 120px;" class="" src="images/logotipo(1).svg" alt="brand-white">
+          </div>
+
             <small class="col-12 col-lg-6 text-white">© 2021 - Banco PAN - Todos os direitos reservados</small>
         </div>
         </div>
 
-        <div class="col-12 mt-4 offset-lg-3 col-lg-3 text-center text-lg-end ">
+        <div class="col-12 mt-4 offset-lg-3 col-lg-3 text-md-center text-lg-end ">
         <small class="mb-4 text-white">Redes Sociais</small>
-        <ul class="ps-0 ps-lg-3 d-flex justify-content-center justify-content-lg-end align-items-center text-lg-end">
+        <ul class="ps-0 ps-lg-3 d-flex justify-content-md-center justify-content-lg-end align-items-center text-lg-end">
             <li class="nav-link px-2"><a href="#"><img src="images/Vector(10).svg" alt="facebook"></a></li>
             <li class="nav-link px-2"><a href="#"><img src="images/Vector(11).svg" alt="instagram"></a></li>
             <li class="nav-link px-2"><a href="#"><img src="images/Vector(12).svg" alt="twitter"></a></li>
@@ -601,7 +615,7 @@
 
 
     </div> -->
-    <div class="accordion accordion-flush row my-4 gy-4 text-center text-lg-start justify-content-center justify-content-xl-start row-cols-1 row-cols-lg-3 row-cols-xl-6" id="accordionFoot1">
+    <div class="accordion accordion-flush  row my-4 text-md-center text-lg-start justify-content-md-center justify-content-xl-start row-cols-1 row-cols-xl-6" id="accordionFoot1">
       <div class="accordion-item col">
         <h2 class="accordion-header" id="foot-heading1">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#foot-collapse1" aria-expanded="false" aria-controls="foot-collapse1">
@@ -758,28 +772,28 @@
 
     <hr>
 
-    <div class="row mt-3 align-items-center">
+    <div class="row mt-3 px-lg-0 align-items-center">
         <div class="col-12 col-lg-6">
-        <ul class="nav justify-content-center justify-content-lg-start">
+        <ul class="nav d-block d-md-flex justify-content-md-center justify-content-lg-start">
             <li class="nav-item">
-            <a class="nav-link text-white" href="#">Termos de uso</a>
+            <a class="nav-link text-white text-decoration-underline px-0 px-md-3" href="#">Termos de uso</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link text-white" href="#">Política de privacidade</a>
+            <a class="nav-link text-white text-decoration-underline px-0 px-md-3" href="#">Política de privacidade</a>
             </li>
         </ul>
         </div>
         <div class="col-12 col-lg-6">
-        <ul class="nav justify-content-center justify-content-lg-end">
-            <li class="nav-item">
-            <a class="nav-link d-inline text-white" href="#">Desenvolvimento: <b>RIWeb</b></a>
+        <ul class="nav justify-content-md-center justify-content-lg-end">
+            <li class="nav-item pt-1">
+            <a class="nav-link d-inline text-white px-0 px-md-3" href="#">Desenvolvimento: <b>RIWeb</b></a>
             </li>
         </ul>
         </div>
     </div>
 
 
-    </div>
+  </div>
 
 </footer>
 

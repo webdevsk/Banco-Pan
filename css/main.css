@@ -70,8 +70,14 @@ table {
     .accordion-button {
       padding: 1rem 0rem !important; } }
 
-.cards {
+.cards, .cards .accordion-body {
   background-color: #F5F5F5; }
+
+.cards .accordion-button {
+  padding: .5rem 0rem !important; }
+
+.cards .accordion-body {
+  padding: 0 !important; }
 
 #header {
   position: sticky;
@@ -93,7 +99,7 @@ li::marker {
   color: #03A9F4; }
 
 .resultscarousel .carousel-buttons .nav-link:hover {
-  box-shadow: 10px 10px 20px #dbdbdb, -10px -10px 20px #ffffff; }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
 .resultscarousel a:hover img {
   filter: invert(53%) sepia(89%) saturate(2808%) hue-rotate(166deg) brightness(100%) contrast(98%); }
 
@@ -204,11 +210,21 @@ footer .accordion-button {
     footer .accordion-button {
       cursor: default !important; } }
 
-aside .accordion-body .nav-link, footer .accordion-body .nav-link {
+footer .accordion-body .nav-link {
   padding: 0.5rem; }
   @media (min-width: 992px) {
-    aside .accordion-body .nav-link, footer .accordion-body .nav-link {
+    footer .accordion-body .nav-link {
       padding: 0.5rem 0rem !important; } }
+
+aside .accordion-body .nav-link {
+  padding: 0.5rem; }
+  @media (min-width: 992px) {
+    aside .accordion-body .nav-link {
+      padding: 0.5rem 0rem !important; } }
+
+aside .accordion-body {
+  padding: 0rem !important;
+  margin-bottom: 1rem; }
 
 .accordion-button::after {
   display: none; }
@@ -223,9 +239,15 @@ aside .accordion-body .nav-link, footer .accordion-body .nav-link {
   .cards .accordion-button::before {
     background-image: none;
     background-color: #03A9F4;
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%; }
+  .cards .accordion-button:not(.collapsed)::before {
+    background-image: none;
+    width: 6px;
+    height: 6px;
+    background-size: 6px;
+    transition-duration: 0ms; }
 
 .accordion-button::before {
   flex-shrink: 0;

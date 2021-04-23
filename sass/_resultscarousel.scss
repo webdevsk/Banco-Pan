@@ -54,6 +54,7 @@
 }
 
 .resultscarousel .carousel-body a{
+    transition-duration: all 0.3s;
     align-items: end;
     &:hover img{
         filter: invert(53%) sepia(89%) saturate(2808%) hue-rotate(166deg) brightness(100%) contrast(98%);

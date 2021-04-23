@@ -20,9 +20,9 @@ var trace1 = {
 var data = [trace1];
 
 var layout = {
-    autosize: 'true',
+    autosize: 'false',
     xaxis:{autotick: true},
-    margin: {t:10,b:10,l:0,r:0},
+    margin: {t:0,b:5,l:0,r:0},
     font: {size: 14},
     showlegend: false,
     yaxis: {

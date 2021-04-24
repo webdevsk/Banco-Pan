@@ -216,9 +216,9 @@ li::marker{
 .resultscarousel{
   .carousel-buttons .nav-link{
     border-radius: 6px;
+    margin-right: 10px;
+    margin-left: 10px;
     @media(max-width: 991px){
-      margin-right: 10px;
-      margin-left: 10px;
       align-items: flex-end;
     }
   }
